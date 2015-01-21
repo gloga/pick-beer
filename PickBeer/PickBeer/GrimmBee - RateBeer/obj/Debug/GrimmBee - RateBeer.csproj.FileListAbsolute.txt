@@ -1,0 +1,1 @@
+c:\users\gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe.config

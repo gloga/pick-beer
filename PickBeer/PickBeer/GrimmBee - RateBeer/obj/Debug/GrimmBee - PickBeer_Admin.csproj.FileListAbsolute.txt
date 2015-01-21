@@ -1,0 +1,70 @@
+c:\users\gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe.config
+c:\users\gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe
+c:\users\gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.pdb
+c:\users\gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csprojResolveAssemblyReference.cache
+c:\users\gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormMain.resources
+c:\users\gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.Properties.Resources.resources
+c:\users\gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csproj.GenerateResource.Cache
+c:\users\gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.exe
+c:\users\gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.pdb
+C:\Users\Gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormView.resources
+C:\Users\Gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormAdd.resources
+C:\Users\Gabriel\documents\visual studio 2012\Projects\GrimmBee - RateBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormUpdate.resources
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe.config
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.exe
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormAdd.resources
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormMain.resources
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormUpdate.resources
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormView.resources
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.Properties.Resources.resources
+C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe.config
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.exe
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.pdb
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.pdb
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormAdd.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormMain.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormUpdate.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormView.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.Properties.Resources.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csproj.GenerateResource.Cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe.config
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csprojResolveAssemblyReference.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormAdd.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormMain.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormUpdate.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormView.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.Properties.Resources.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csproj.GenerateResource.Cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe.config
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csprojResolveAssemblyReference.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormAdd.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormMain.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormUpdate.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormView.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.Properties.Resources.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csproj.GenerateResource.Cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormStanje.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormNedostaje.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe.config
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.pdb
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe.config
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.exe
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.pdb
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer - ADMIN.exe.config
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer - ADMIN.exe.config

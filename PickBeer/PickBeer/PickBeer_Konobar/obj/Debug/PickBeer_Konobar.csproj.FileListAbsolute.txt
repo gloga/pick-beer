@@ -1,0 +1,78 @@
+C:\Users\Gabriel\Desktop\novo\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe.config
+C:\Users\Gabriel\Desktop\novo\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe
+C:\Users\Gabriel\Desktop\novo\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.pdb
+C:\Users\Gabriel\Desktop\novo\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\novo\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\novo\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\novo\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.exe
+C:\Users\Gabriel\Desktop\novo\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.pdb
+C:\Users\Gabriel\Desktop\novo\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormDetalji_kosarice.resources
+C:\Users\Gabriel\Desktop\novo\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormOtvorene_kosarice.resources
+C:\Users\Gabriel\Desktop\PickBeer\novo\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe.config
+C:\Users\Gabriel\Desktop\PickBeer\novo\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.exe
+C:\Users\Gabriel\Desktop\PickBeer\novo\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.pdb
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe.config
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.exe
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.pdb
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.pdb
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormDetalji_kosarice.resources
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormOtvorene_kosarice.resources
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csproj.GenerateResource.Cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe.config
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csprojResolveAssemblyReference.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormDetalji_kosarice.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormOtvorene_kosarice.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.Properties.Resources.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csproj.GenerateResource.Cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\RdlCompile.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\RdlCompile.compiled
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormIzdane_narudbe.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe.config
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csprojResolveAssemblyReference.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormDetalji_kosarice.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormIzdane_narudbe.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormOtvorene_kosarice.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.Properties.Resources.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csproj.GenerateResource.Cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\RdlCompile.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_Konobar\obj\Debug\RdlCompile.compiled
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe.config
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csprojResolveAssemblyReference.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormDetalji_kosarice.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormIzdane_narudbe.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormOtvorene_kosarice.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.Properties.Resources.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csproj.GenerateResource.Cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\obj\Debug\RdlCompile.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\obj\Debug\RdlCompile.compiled
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormRacun.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe.config
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.exe
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.pdb
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.exe
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\bin\Debug\PickBeer_Konobar.pdb
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormDetalji_kosarice.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormIzdane_narudbe.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormOtvorene_kosarice.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.FormRacun.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Debug\PickBeer_Konobar.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Debug\RdlCompile.cache
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Debug\RdlCompile.compiled
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer\PickBeer_Konobar\bin\Debug\GrimmBee - PickBeer - Konobar.exe.config

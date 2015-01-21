@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="T07_DBDataSet" targetNamespace="http://tempuri.org/T07_DBDataSet.xsd" xmlns:mstns="http://tempuri.org/T07_DBDataSet.xsd" xmlns="http://tempuri.org/T07_DBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="T07_DBConnectionString_Konobar" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="T07_DBConnectionString_Konobar (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PickBeer_Konobar.Properties.Settings.GlobalReference.Default.T07_DBConnectionString_Konobar" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Otvorene narudžbeTableAdapter" GeneratorDataComponentClassName="Otvorene_narudžbeTableAdapter" Name="Otvorene narudžbe" UserDataComponentName="Otvorene narudžbeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.[Otvorene narudžbe]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_kosarica, Vrijeme, Status
+FROM            [Otvorene narudžbe]
+ORDER BY Vrijeme DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_kosarica" DataSetColumn="ID_kosarica" />
+              <Mapping SourceColumn="Vrijeme" DataSetColumn="Vrijeme" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Pregled_narudbeTableAdapter" GeneratorDataComponentClassName="Pregled_narudbeTableAdapter" Name="Pregled_narudbe" UserDataComponentName="Pregled_narudbeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Pregled_narudbe" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_pivo, Kolicina, Ime_piva, Cijena, Ukupno, ID_kosarica FROM dbo.Pregled_narudbe</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_pivo" DataSetColumn="ID_pivo" />
+              <Mapping SourceColumn="Kolicina" DataSetColumn="Kolicina" />
+              <Mapping SourceColumn="Ime_piva" DataSetColumn="Ime_piva" />
+              <Mapping SourceColumn="Cijena" DataSetColumn="Cijena" />
+              <Mapping SourceColumn="Ukupno" DataSetColumn="Ukupno" />
+              <Mapping SourceColumn="ID_kosarica" DataSetColumn="ID_kosarica" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Pregled_narudbe" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_pivo, SUM(Kolicina) AS Kolicina, Ime_piva, Cijena, SUM(Ukupno) AS Ukupno, ID_kosarica
+FROM            Pregled_narudbe
+WHERE        (ID_kosarica = @ID_kosarica)
+GROUP BY ID_pivo, ID_kosarica</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID_kosarica" ColumnName="ID_kosarica" DataSourceName="T07_DB.dbo.Pregled_narudbe" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Pregled_narudbe" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByIDkosaricaGrup" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByIDkosaricaGrup" GeneratorSourceName="FillByIDkosaricaGrup" GetMethodModifier="Public" GetMethodName="GetDataByIDkosaricaGrup" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByIDkosaricaGrup" UserSourceName="FillByIDkosaricaGrup">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_pivo, ID_kosarica, SUM(Kolicina) AS Kolicina, Ime_piva, SUM(Cijena) AS Cijena, SUM(Ukupno) AS Ukupno
+FROM            Pregled_narudbe
+WHERE        (ID_kosarica = @ID_kosarica)
+GROUP BY ID_pivo, ID_kosarica, Ime_piva, Cijena, Ukupno</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID_kosarica" ColumnName="ID_kosarica" DataSourceName="T07_DB.dbo.Pregled_narudbe" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Izdane narudžbeTableAdapter" GeneratorDataComponentClassName="Izdane_narudžbeTableAdapter" Name="Izdane narudžbe" UserDataComponentName="Izdane narudžbeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.[Izdane narudžbe]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_kosarica, Vrijeme, Status
+FROM            [Izdane narudžbe]
+ORDER BY Vrijeme DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_kosarica" DataSetColumn="ID_kosarica" />
+              <Mapping SourceColumn="Vrijeme" DataSetColumn="Vrijeme" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="KosaricaTableAdapter" GeneratorDataComponentClassName="KosaricaTableAdapter" Name="Kosarica" UserDataComponentName="KosaricaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Kosarica" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Kosarica] WHERE (([ID_kosarica] = @Original_ID_kosarica) AND ((@IsNull_Vrijeme = 1 AND [Vrijeme] IS NULL) OR ([Vrijeme] = @Original_Vrijeme)) AND ((@IsNull_Status = 1 AND [Status] IS NULL) OR ([Status] = @Original_Status)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Vrijeme" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Vrijeme" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_Vrijeme" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Vrijeme" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Status" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Status" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Status" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Status" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Kosarica] ([Vrijeme], [Status]) VALUES (@Vrijeme, @Status);
+SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Vrijeme" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Vrijeme" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Status" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Status" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_kosarica, Vrijeme, Status FROM dbo.Kosarica</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Kosarica] SET [Vrijeme] = @Vrijeme, [Status] = @Status WHERE (([ID_kosarica] = @Original_ID_kosarica) AND ((@IsNull_Vrijeme = 1 AND [Vrijeme] IS NULL) OR ([Vrijeme] = @Original_Vrijeme)) AND ((@IsNull_Status = 1 AND [Status] IS NULL) OR ([Status] = @Original_Status)));
+SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = @ID_kosarica)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Vrijeme" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Vrijeme" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Status" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Status" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Vrijeme" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Vrijeme" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_Vrijeme" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Vrijeme" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Status" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Status" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Status" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Status" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID_kosarica" ColumnName="ID_kosarica" DataSourceName="T07_DB.dbo.Kosarica" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_kosarica" DataSetColumn="ID_kosarica" />
+              <Mapping SourceColumn="Vrijeme" DataSetColumn="Vrijeme" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PivoTableAdapter" GeneratorDataComponentClassName="PivoTableAdapter" Name="Pivo" UserDataComponentName="PivoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Pivo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Pivo] WHERE (([ID_pivo] = @Original_ID_pivo) AND ((@IsNull_Ime_piva = 1 AND [Ime_piva] IS NULL) OR ([Ime_piva] = @Original_Ime_piva)) AND ((@IsNull_Cijena = 1 AND [Cijena] IS NULL) OR ([Cijena] = @Original_Cijena)) AND ((@IsNull_Stanje = 1 AND [Stanje] IS NULL) OR ([Stanje] = @Original_Stanje)) AND ((@IsNull_Drzava_podrijetla = 1 AND [Drzava_podrijetla] IS NULL) OR ([Drzava_podrijetla] = @Original_Drzava_podrijetla)) AND ((@IsNull_Vrsta = 1 AND [Vrsta] IS NULL) OR ([Vrsta] = @Original_Vrsta)) AND ((@IsNull_Udio_alk = 1 AND [Udio_alk] IS NULL) OR ([Udio_alk] = @Original_Udio_alk)) AND ((@IsNull_Volumen = 1 AND [Volumen] IS NULL) OR ([Volumen] = @Original_Volumen)) AND ((@IsNull_OcjenaRB = 1 AND [OcjenaRB] IS NULL) OR ([OcjenaRB] = @Original_OcjenaRB)) AND ((@IsNull_OcjenaK = 1 AND [OcjenaK] IS NULL) OR ([OcjenaK] = @Original_OcjenaK)) AND ((@IsNull_Proizvodac = 1 AND [Proizvodac] IS NULL) OR ([Proizvodac] = @Original_Proizvodac)) AND ((@IsNull_Puta_narucivano = 1 AND [Puta_narucivano] IS NULL) OR ([Puta_narucivano] = @Original_Puta_narucivano)) AND ((@IsNull_Slika = 1 AND [Slika] IS NULL) OR ([Slika] = @Original_Slika)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID_pivo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_pivo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Ime_piva" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Ime_piva" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Ime_piva" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ime_piva" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Cijena" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cijena" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Cijena" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Cijena" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Stanje" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stanje" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Stanje" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stanje" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Drzava_podrijetla" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Drzava_podrijetla" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Drzava_podrijetla" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Drzava_podrijetla" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Vrsta" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Vrsta" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Vrsta" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Vrsta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Udio_alk" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Udio_alk" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Udio_alk" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Udio_alk" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Volumen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Volumen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Volumen" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Volumen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OcjenaRB" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OcjenaRB" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_OcjenaRB" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="OcjenaRB" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OcjenaK" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OcjenaK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_OcjenaK" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="OcjenaK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proizvodac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proizvodac" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Proizvodac" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Proizvodac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Puta_narucivano" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Puta_narucivano" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Puta_narucivano" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Puta_narucivano" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Slika" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Slika" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Slika" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Slika" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Pivo] ([Ime_piva], [Cijena], [Stanje], [Drzava_podrijetla], [Vrsta], [Udio_alk], [Volumen], [OcjenaRB], [OcjenaK], [Proizvodac], [Puta_narucivano], [Slika]) VALUES (@Ime_piva, @Cijena, @Stanje, @Drzava_podrijetla, @Vrsta, @Udio_alk, @Volumen, @OcjenaRB, @OcjenaK, @Proizvodac, @Puta_narucivano, @Slika);
+SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Volumen, OcjenaRB, OcjenaK, Proizvodac, Puta_narucivano, Slika FROM Pivo WHERE (ID_pivo = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Ime_piva" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ime_piva" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Cijena" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Cijena" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Stanje" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stanje" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Drzava_podrijetla" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Drzava_podrijetla" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Vrsta" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Vrsta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Udio_alk" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Udio_alk" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Volumen" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Volumen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@OcjenaRB" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="OcjenaRB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@OcjenaK" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="OcjenaK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Proizvodac" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Proizvodac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Puta_narucivano" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Puta_narucivano" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Slika" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Slika" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Volumen, OcjenaRB, OcjenaK, Proizvodac, Puta_narucivano, Slika FROM dbo.Pivo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Pivo] SET [Ime_piva] = @Ime_piva, [Cijena] = @Cijena, [Stanje] = @Stanje, [Drzava_podrijetla] = @Drzava_podrijetla, [Vrsta] = @Vrsta, [Udio_alk] = @Udio_alk, [Volumen] = @Volumen, [OcjenaRB] = @OcjenaRB, [OcjenaK] = @OcjenaK, [Proizvodac] = @Proizvodac, [Puta_narucivano] = @Puta_narucivano, [Slika] = @Slika WHERE (([ID_pivo] = @Original_ID_pivo) AND ((@IsNull_Ime_piva = 1 AND [Ime_piva] IS NULL) OR ([Ime_piva] = @Original_Ime_piva)) AND ((@IsNull_Cijena = 1 AND [Cijena] IS NULL) OR ([Cijena] = @Original_Cijena)) AND ((@IsNull_Stanje = 1 AND [Stanje] IS NULL) OR ([Stanje] = @Original_Stanje)) AND ((@IsNull_Drzava_podrijetla = 1 AND [Drzava_podrijetla] IS NULL) OR ([Drzava_podrijetla] = @Original_Drzava_podrijetla)) AND ((@IsNull_Vrsta = 1 AND [Vrsta] IS NULL) OR ([Vrsta] = @Original_Vrsta)) AND ((@IsNull_Udio_alk = 1 AND [Udio_alk] IS NULL) OR ([Udio_alk] = @Original_Udio_alk)) AND ((@IsNull_Volumen = 1 AND [Volumen] IS NULL) OR ([Volumen] = @Original_Volumen)) AND ((@IsNull_OcjenaRB = 1 AND [OcjenaRB] IS NULL) OR ([OcjenaRB] = @Original_OcjenaRB)) AND ((@IsNull_OcjenaK = 1 AND [OcjenaK] IS NULL) OR ([OcjenaK] = @Original_OcjenaK)) AND ((@IsNull_Proizvodac = 1 AND [Proizvodac] IS NULL) OR ([Proizvodac] = @Original_Proizvodac)) AND ((@IsNull_Puta_narucivano = 1 AND [Puta_narucivano] IS NULL) OR ([Puta_narucivano] = @Original_Puta_narucivano)) AND ((@IsNull_Slika = 1 AND [Slika] IS NULL) OR ([Slika] = @Original_Slika)));
+SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Volumen, OcjenaRB, OcjenaK, Proizvodac, Puta_narucivano, Slika FROM Pivo WHERE (ID_pivo = @ID_pivo)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Ime_piva" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ime_piva" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Cijena" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Cijena" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Stanje" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stanje" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Drzava_podrijetla" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Drzava_podrijetla" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Vrsta" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Vrsta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Udio_alk" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Udio_alk" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Volumen" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Volumen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@OcjenaRB" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="OcjenaRB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@OcjenaK" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="OcjenaK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Proizvodac" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Proizvodac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Puta_narucivano" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Puta_narucivano" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Slika" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Slika" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID_pivo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_pivo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Ime_piva" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Ime_piva" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Ime_piva" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ime_piva" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Cijena" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cijena" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Cijena" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Cijena" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Stanje" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stanje" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Stanje" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stanje" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Drzava_podrijetla" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Drzava_podrijetla" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Drzava_podrijetla" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Drzava_podrijetla" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Vrsta" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Vrsta" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Vrsta" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Vrsta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Udio_alk" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Udio_alk" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Udio_alk" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Udio_alk" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Volumen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Volumen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Volumen" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Volumen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OcjenaRB" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OcjenaRB" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_OcjenaRB" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="OcjenaRB" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OcjenaK" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OcjenaK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_OcjenaK" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="OcjenaK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proizvodac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proizvodac" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Proizvodac" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Proizvodac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Puta_narucivano" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Puta_narucivano" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Puta_narucivano" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Puta_narucivano" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Slika" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Slika" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Slika" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Slika" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID_pivo" ColumnName="ID_pivo" DataSourceName="T07_DB.dbo.Pivo" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID_pivo" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_pivo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_pivo" DataSetColumn="ID_pivo" />
+              <Mapping SourceColumn="Ime_piva" DataSetColumn="Ime_piva" />
+              <Mapping SourceColumn="Cijena" DataSetColumn="Cijena" />
+              <Mapping SourceColumn="Stanje" DataSetColumn="Stanje" />
+              <Mapping SourceColumn="Drzava_podrijetla" DataSetColumn="Drzava_podrijetla" />
+              <Mapping SourceColumn="Vrsta" DataSetColumn="Vrsta" />
+              <Mapping SourceColumn="Udio_alk" DataSetColumn="Udio_alk" />
+              <Mapping SourceColumn="Volumen" DataSetColumn="Volumen" />
+              <Mapping SourceColumn="OcjenaRB" DataSetColumn="OcjenaRB" />
+              <Mapping SourceColumn="OcjenaK" DataSetColumn="OcjenaK" />
+              <Mapping SourceColumn="Proizvodac" DataSetColumn="Proizvodac" />
+              <Mapping SourceColumn="Puta_narucivano" DataSetColumn="Puta_narucivano" />
+              <Mapping SourceColumn="Slika" DataSetColumn="Slika" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RacunTableAdapter" GeneratorDataComponentClassName="RacunTableAdapter" Name="Racun" UserDataComponentName="RacunTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Racun" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Racun] WHERE (([ID_racun] = @Original_ID_racun) AND ([ID_kosarica] = @Original_ID_kosarica) AND ([Vrijeme] = @Original_Vrijeme))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID_racun" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_racun" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_Vrijeme" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Vrijeme" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Racun] ([ID_kosarica], [Vrijeme]) VALUES (@ID_kosarica, @Vrijeme);
+SELECT ID_racun, ID_kosarica, Vrijeme FROM Racun WHERE (ID_racun = SCOPE_IDENTITY()) ORDER BY Vrijeme DESC</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Vrijeme" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Vrijeme" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_racun, ID_kosarica, Vrijeme
+FROM            Racun
+ORDER BY Vrijeme DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Racun] SET [ID_kosarica] = @ID_kosarica, [Vrijeme] = @Vrijeme WHERE (([ID_racun] = @Original_ID_racun) AND ([ID_kosarica] = @Original_ID_kosarica) AND ([Vrijeme] = @Original_Vrijeme));
+SELECT ID_racun, ID_kosarica, Vrijeme FROM Racun WHERE (ID_racun = @ID_racun) ORDER BY Vrijeme DESC</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Vrijeme" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Vrijeme" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID_racun" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_racun" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_Vrijeme" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Vrijeme" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID_racun" ColumnName="ID_racun" DataSourceName="T07_DB.dbo.Racun" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID_racun" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_racun" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_racun" DataSetColumn="ID_racun" />
+              <Mapping SourceColumn="ID_kosarica" DataSetColumn="ID_kosarica" />
+              <Mapping SourceColumn="Vrijeme" DataSetColumn="Vrijeme" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Racun" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByIDMax" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByIDMax" GeneratorSourceName="FillByIDMax" GetMethodModifier="Public" GetMethodName="GetDataByIDMax" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByIDMax" UserSourceName="FillByIDMax">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT TOP (1) ID_kosarica, ID_racun, Vrijeme FROM Racun ORDER BY ID_racun DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="NoviRacun" Modifier="Public" Name="NoviRacun" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="NoviRacun">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO Racun
+                         (ID_kosarica, Vrijeme)
+VALUES        (@ID_kosarica,@Vrijeme); 
+SELECT ID_racun, ID_kosarica, Vrijeme FROM Racun WHERE (ID_racun = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID_kosarica" ColumnName="ID_kosarica" DataSourceName="T07_DB.dbo.Racun" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Vrijeme" ColumnName="Vrijeme" DataSourceName="T07_DB.dbo.Racun" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@Vrijeme" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Vrijeme" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ZadnjiRacun" Modifier="Public" Name="ZadnjiRacun" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ZadnjiRacun">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        MAX(ID_racun) AS ID_racun
+FROM            Racun
+GROUP BY ID_racun</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Stavke_kosaricaTableAdapter" GeneratorDataComponentClassName="Stavke_kosaricaTableAdapter" Name="Stavke_kosarica" UserDataComponentName="Stavke_kosaricaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Stavke_kosarica" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Stavke_kosarica] ([ID_pivo], [ID_kosarica], [Kolicina]) VALUES (@ID_pivo, @ID_kosarica, @Kolicina)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID_pivo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_pivo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Kolicina" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Kolicina" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_pivo, ID_kosarica, Kolicina FROM dbo.Stavke_kosarica</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_pivo" DataSetColumn="ID_pivo" />
+              <Mapping SourceColumn="ID_kosarica" DataSetColumn="ID_kosarica" />
+              <Mapping SourceColumn="Kolicina" DataSetColumn="Kolicina" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Stavke_kosarica" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByIDgrup" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByIDgrup" GeneratorSourceName="FillByIDgrup" GetMethodModifier="Public" GetMethodName="GetDataByIDgrup" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByIDgrup" UserSourceName="FillByIDgrup">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_pivo, ID_kosarica, SUM(Kolicina) AS Kolicina
+FROM            Stavke_kosarica
+WHERE        (ID_kosarica = @ID_kosarica)
+GROUP BY ID_pivo, ID_kosarica</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID_kosarica" ColumnName="ID_kosarica" DataSourceName="T07_DB.dbo.Stavke_kosarica" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Stavke_kosarica" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByIDkosarice" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByIDkosarice" GeneratorSourceName="FillByIDkosarice" GetMethodModifier="Public" GetMethodName="GetDataByIDkosarice" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByIDkosarice" UserSourceName="FillByIDkosarice">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_pivo, ID_kosarica, Kolicina
+FROM            Stavke_kosarica
+WHERE        (ID_kosarica = @ID_kosarica)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID_kosarica" ColumnName="ID_kosarica" DataSourceName="T07_DB.dbo.Stavke_kosarica" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID_kosarica" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_kosarica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Stavke_racunTableAdapter" GeneratorDataComponentClassName="Stavke_racunTableAdapter" Name="Stavke_racun" UserDataComponentName="Stavke_racunTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Stavke_racun" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Stavke_racun] ([ID_pivo], [ID_racun], [Kolicina]) VALUES (@ID_pivo, @ID_racun, @Kolicina)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID_pivo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_pivo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID_racun" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID_racun" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Kolicina" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Kolicina" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_pivo, ID_racun, Kolicina FROM dbo.Stavke_racun</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_pivo" DataSetColumn="ID_pivo" />
+              <Mapping SourceColumn="ID_racun" DataSetColumn="ID_racun" />
+              <Mapping SourceColumn="Kolicina" DataSetColumn="Kolicina" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DodavanjeStavkeRacuna" Modifier="Public" Name="DodavanjeStavkeRacuna" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DodavanjeStavkeRacuna">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO Stavke_racun
+                         (ID_pivo, ID_racun, Kolicina)
+VALUES        (@ID_pivo,@ID_racun,@Kolicina)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID_pivo" ColumnName="ID_pivo" DataSourceName="T07_DB.dbo.Stavke_racun" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID_pivo" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_pivo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID_racun" ColumnName="ID_racun" DataSourceName="T07_DB.dbo.Stavke_racun" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID_racun" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_racun" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Kolicina" ColumnName="Kolicina" DataSourceName="T07_DB.dbo.Stavke_racun" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Kolicina" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Kolicina" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Stavke_racun" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBybrRacuna" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBybrRacuna" GeneratorSourceName="FillBybrRacuna" GetMethodModifier="Public" GetMethodName="GetDataBybrRacuna" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBybrRacuna" UserSourceName="FillBybrRacuna">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_pivo, ID_racun, SUM(Kolicina) AS Kolicina
+FROM            Stavke_racun
+WHERE        (ID_racun = @brojRacuna)
+GROUP BY ID_pivo, ID_racun</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="brojRacuna" ColumnName="ID_racun" DataSourceName="T07_DB.dbo.Stavke_racun" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@brojRacuna" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_racun" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Table_testTableAdapter" GeneratorDataComponentClassName="Table_testTableAdapter" Name="Table_test" UserDataComponentName="Table_testTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Table_test" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Table_test] WHERE (([ID] = @Original_ID) AND ([FirstName] = @Original_FirstName) AND ([LastName] = @Original_LastName) AND ((@IsNull_Image = 1 AND [Image] IS NULL) OR ([Image] = @Original_Image)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Image" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Image" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Table_test] ([ID], [FirstName], [LastName], [Image]) VALUES (@ID, @FirstName, @LastName, @Image);
+SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Image" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, FirstName, LastName, Image FROM dbo.Table_test</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Table_test] SET [ID] = @ID, [FirstName] = @FirstName, [LastName] = @LastName, [Image] = @Image WHERE (([ID] = @Original_ID) AND ([FirstName] = @Original_FirstName) AND ([LastName] = @Original_LastName) AND ((@IsNull_Image = 1 AND [Image] IS NULL) OR ([Image] = @Original_Image)));
+SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Image" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Image" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Image" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="Image" DataSetColumn="Image" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MAX ID_RacunTableAdapter" GeneratorDataComponentClassName="MAX_ID_RacunTableAdapter" Name="MAX ID_Racun" UserDataComponentName="MAX ID_RacunTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.[MAX ID_Racun]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Expr1 FROM dbo.[MAX ID_Racun]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Pregled_racunaTableAdapter" GeneratorDataComponentClassName="Pregled_racunaTableAdapter" Name="Pregled_racuna" UserDataComponentName="Pregled_racunaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Pregled_racuna" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_pivo, Kolicina, Ime_piva, Cijena, Vrijeme, ID_racun FROM dbo.Pregled_racuna</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_pivo" DataSetColumn="ID_pivo" />
+              <Mapping SourceColumn="Kolicina" DataSetColumn="Kolicina" />
+              <Mapping SourceColumn="Ime_piva" DataSetColumn="Ime_piva" />
+              <Mapping SourceColumn="Cijena" DataSetColumn="Cijena" />
+              <Mapping SourceColumn="Vrijeme" DataSetColumn="Vrijeme" />
+              <Mapping SourceColumn="ID_racun" DataSetColumn="ID_racun" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="T07_DBConnectionString_Konobar (Settings)" DbObjectName="T07_DB.dbo.Pregled_racuna" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByIDracun" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByIDracun" GeneratorSourceName="FillByIDracun" GetMethodModifier="Public" GetMethodName="GetDataByIDracun" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByIDracun" UserSourceName="FillByIDracun">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_pivo, SUM(Kolicina) AS Kolicina, Ime_piva, Cijena, Vrijeme, ID_racun
+FROM            Pregled_racuna
+WHERE        (ID_racun = @ID_racun)
+GROUP BY ID_pivo, ID_racun, Ime_piva, Cijena,Vrijeme</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID_racun" ColumnName="ID_racun" DataSourceName="T07_DB.dbo.Pregled_racuna" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID_racun" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_racun" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="T07_DBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="T07_DBDataSet" msprop:Generator_UserDSName="T07_DBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Otvorene_x0020_narudžbe" msprop:Generator_TableClassName="Otvorene_narudžbeDataTable" msprop:Generator_TableVarName="tableOtvorene_narudžbe" msprop:Generator_TablePropName="Otvorene_narudžbe" msprop:Generator_RowDeletingName="Otvorene_narudžbeRowDeleting" msprop:Generator_RowChangingName="Otvorene_narudžbeRowChanging" msprop:Generator_RowEvHandlerName="Otvorene_narudžbeRowChangeEventHandler" msprop:Generator_RowDeletedName="Otvorene_narudžbeRowDeleted" msprop:Generator_UserTableName="Otvorene narudžbe" msprop:Generator_RowChangedName="Otvorene_narudžbeRowChanged" msprop:Generator_RowEvArgName="Otvorene_narudžbeRowChangeEvent" msprop:Generator_RowClassName="Otvorene_narudžbeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_kosarica" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_kosarica" msprop:Generator_ColumnPropNameInRow="ID_kosarica" msprop:Generator_ColumnPropNameInTable="ID_kosaricaColumn" msprop:Generator_UserColumnName="ID_kosarica" type="xs:int" />
+              <xs:element name="Vrijeme" msprop:Generator_ColumnVarNameInTable="columnVrijeme" msprop:Generator_ColumnPropNameInRow="Vrijeme" msprop:Generator_ColumnPropNameInTable="VrijemeColumn" msprop:Generator_UserColumnName="Vrijeme" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Pregled_narudbe" msprop:Generator_TableClassName="Pregled_narudbeDataTable" msprop:Generator_TableVarName="tablePregled_narudbe" msprop:Generator_RowChangedName="Pregled_narudbeRowChanged" msprop:Generator_TablePropName="Pregled_narudbe" msprop:Generator_RowDeletingName="Pregled_narudbeRowDeleting" msprop:Generator_RowChangingName="Pregled_narudbeRowChanging" msprop:Generator_RowEvHandlerName="Pregled_narudbeRowChangeEventHandler" msprop:Generator_RowDeletedName="Pregled_narudbeRowDeleted" msprop:Generator_RowClassName="Pregled_narudbeRow" msprop:Generator_UserTableName="Pregled_narudbe" msprop:Generator_RowEvArgName="Pregled_narudbeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_pivo" msprop:Generator_ColumnVarNameInTable="columnID_pivo" msprop:Generator_ColumnPropNameInRow="ID_pivo" msprop:Generator_ColumnPropNameInTable="ID_pivoColumn" msprop:Generator_UserColumnName="ID_pivo" type="xs:int" />
+              <xs:element name="Kolicina" msprop:Generator_ColumnVarNameInTable="columnKolicina" msprop:Generator_ColumnPropNameInRow="Kolicina" msprop:Generator_ColumnPropNameInTable="KolicinaColumn" msprop:Generator_UserColumnName="Kolicina" type="xs:int" />
+              <xs:element name="Ime_piva" msprop:Generator_ColumnVarNameInTable="columnIme_piva" msprop:Generator_ColumnPropNameInRow="Ime_piva" msprop:Generator_ColumnPropNameInTable="Ime_pivaColumn" msprop:Generator_UserColumnName="Ime_piva" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cijena" msprop:Generator_ColumnVarNameInTable="columnCijena" msprop:Generator_ColumnPropNameInRow="Cijena" msprop:Generator_ColumnPropNameInTable="CijenaColumn" msprop:Generator_UserColumnName="Cijena" type="xs:double" minOccurs="0" />
+              <xs:element name="Ukupno" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUkupno" msprop:Generator_ColumnPropNameInRow="Ukupno" msprop:Generator_ColumnPropNameInTable="UkupnoColumn" msprop:Generator_UserColumnName="Ukupno" type="xs:double" minOccurs="0" />
+              <xs:element name="ID_kosarica" msprop:Generator_ColumnVarNameInTable="columnID_kosarica" msprop:Generator_ColumnPropNameInRow="ID_kosarica" msprop:Generator_ColumnPropNameInTable="ID_kosaricaColumn" msprop:Generator_UserColumnName="ID_kosarica" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Izdane_x0020_narudžbe" msprop:Generator_TableClassName="Izdane_narudžbeDataTable" msprop:Generator_TableVarName="tableIzdane_narudžbe" msprop:Generator_RowChangedName="Izdane_narudžbeRowChanged" msprop:Generator_TablePropName="Izdane_narudžbe" msprop:Generator_RowDeletingName="Izdane_narudžbeRowDeleting" msprop:Generator_RowChangingName="Izdane_narudžbeRowChanging" msprop:Generator_RowEvHandlerName="Izdane_narudžbeRowChangeEventHandler" msprop:Generator_RowDeletedName="Izdane_narudžbeRowDeleted" msprop:Generator_RowClassName="Izdane_narudžbeRow" msprop:Generator_UserTableName="Izdane narudžbe" msprop:Generator_RowEvArgName="Izdane_narudžbeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_kosarica" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_kosarica" msprop:Generator_ColumnPropNameInRow="ID_kosarica" msprop:Generator_ColumnPropNameInTable="ID_kosaricaColumn" msprop:Generator_UserColumnName="ID_kosarica" type="xs:int" />
+              <xs:element name="Vrijeme" msprop:Generator_ColumnVarNameInTable="columnVrijeme" msprop:Generator_ColumnPropNameInRow="Vrijeme" msprop:Generator_ColumnPropNameInTable="VrijemeColumn" msprop:Generator_UserColumnName="Vrijeme" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Kosarica" msprop:Generator_TableClassName="KosaricaDataTable" msprop:Generator_TableVarName="tableKosarica" msprop:Generator_RowChangedName="KosaricaRowChanged" msprop:Generator_TablePropName="Kosarica" msprop:Generator_RowDeletingName="KosaricaRowDeleting" msprop:Generator_RowChangingName="KosaricaRowChanging" msprop:Generator_RowEvHandlerName="KosaricaRowChangeEventHandler" msprop:Generator_RowDeletedName="KosaricaRowDeleted" msprop:Generator_RowClassName="KosaricaRow" msprop:Generator_UserTableName="Kosarica" msprop:Generator_RowEvArgName="KosaricaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_kosarica" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_kosarica" msprop:Generator_ColumnPropNameInRow="ID_kosarica" msprop:Generator_ColumnPropNameInTable="ID_kosaricaColumn" msprop:Generator_UserColumnName="ID_kosarica" type="xs:int" />
+              <xs:element name="Vrijeme" msprop:Generator_ColumnVarNameInTable="columnVrijeme" msprop:Generator_ColumnPropNameInRow="Vrijeme" msprop:Generator_ColumnPropNameInTable="VrijemeColumn" msprop:Generator_UserColumnName="Vrijeme" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Pivo" msprop:Generator_TableClassName="PivoDataTable" msprop:Generator_TableVarName="tablePivo" msprop:Generator_RowChangedName="PivoRowChanged" msprop:Generator_TablePropName="Pivo" msprop:Generator_RowDeletingName="PivoRowDeleting" msprop:Generator_RowChangingName="PivoRowChanging" msprop:Generator_RowEvHandlerName="PivoRowChangeEventHandler" msprop:Generator_RowDeletedName="PivoRowDeleted" msprop:Generator_RowClassName="PivoRow" msprop:Generator_UserTableName="Pivo" msprop:Generator_RowEvArgName="PivoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_pivo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_pivo" msprop:Generator_ColumnPropNameInRow="ID_pivo" msprop:Generator_ColumnPropNameInTable="ID_pivoColumn" msprop:Generator_UserColumnName="ID_pivo" type="xs:int" />
+              <xs:element name="Ime_piva" msprop:Generator_ColumnVarNameInTable="columnIme_piva" msprop:Generator_ColumnPropNameInRow="Ime_piva" msprop:Generator_ColumnPropNameInTable="Ime_pivaColumn" msprop:Generator_UserColumnName="Ime_piva" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cijena" msprop:Generator_ColumnVarNameInTable="columnCijena" msprop:Generator_ColumnPropNameInRow="Cijena" msprop:Generator_ColumnPropNameInTable="CijenaColumn" msprop:Generator_UserColumnName="Cijena" type="xs:double" minOccurs="0" />
+              <xs:element name="Stanje" msprop:Generator_ColumnVarNameInTable="columnStanje" msprop:Generator_ColumnPropNameInRow="Stanje" msprop:Generator_ColumnPropNameInTable="StanjeColumn" msprop:Generator_UserColumnName="Stanje" type="xs:int" minOccurs="0" />
+              <xs:element name="Drzava_podrijetla" msprop:Generator_ColumnVarNameInTable="columnDrzava_podrijetla" msprop:Generator_ColumnPropNameInRow="Drzava_podrijetla" msprop:Generator_ColumnPropNameInTable="Drzava_podrijetlaColumn" msprop:Generator_UserColumnName="Drzava_podrijetla" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vrsta" msprop:Generator_ColumnVarNameInTable="columnVrsta" msprop:Generator_ColumnPropNameInRow="Vrsta" msprop:Generator_ColumnPropNameInTable="VrstaColumn" msprop:Generator_UserColumnName="Vrsta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Udio_alk" msprop:Generator_ColumnVarNameInTable="columnUdio_alk" msprop:Generator_ColumnPropNameInRow="Udio_alk" msprop:Generator_ColumnPropNameInTable="Udio_alkColumn" msprop:Generator_UserColumnName="Udio_alk" type="xs:double" minOccurs="0" />
+              <xs:element name="Volumen" msprop:Generator_ColumnVarNameInTable="columnVolumen" msprop:Generator_ColumnPropNameInRow="Volumen" msprop:Generator_ColumnPropNameInTable="VolumenColumn" msprop:Generator_UserColumnName="Volumen" type="xs:double" minOccurs="0" />
+              <xs:element name="OcjenaRB" msprop:Generator_ColumnVarNameInTable="columnOcjenaRB" msprop:Generator_ColumnPropNameInRow="OcjenaRB" msprop:Generator_ColumnPropNameInTable="OcjenaRBColumn" msprop:Generator_UserColumnName="OcjenaRB" type="xs:double" minOccurs="0" />
+              <xs:element name="OcjenaK" msprop:Generator_ColumnVarNameInTable="columnOcjenaK" msprop:Generator_ColumnPropNameInRow="OcjenaK" msprop:Generator_ColumnPropNameInTable="OcjenaKColumn" msprop:Generator_UserColumnName="OcjenaK" type="xs:double" minOccurs="0" />
+              <xs:element name="Proizvodac" msprop:Generator_ColumnVarNameInTable="columnProizvodac" msprop:Generator_ColumnPropNameInRow="Proizvodac" msprop:Generator_ColumnPropNameInTable="ProizvodacColumn" msprop:Generator_UserColumnName="Proizvodac" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Puta_narucivano" msprop:Generator_ColumnVarNameInTable="columnPuta_narucivano" msprop:Generator_ColumnPropNameInRow="Puta_narucivano" msprop:Generator_ColumnPropNameInTable="Puta_narucivanoColumn" msprop:Generator_UserColumnName="Puta_narucivano" type="xs:int" minOccurs="0" />
+              <xs:element name="Slika" msprop:Generator_ColumnVarNameInTable="columnSlika" msprop:Generator_ColumnPropNameInRow="Slika" msprop:Generator_ColumnPropNameInTable="SlikaColumn" msprop:Generator_UserColumnName="Slika" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Racun" msprop:Generator_TableClassName="RacunDataTable" msprop:Generator_TableVarName="tableRacun" msprop:Generator_RowChangedName="RacunRowChanged" msprop:Generator_TablePropName="Racun" msprop:Generator_RowDeletingName="RacunRowDeleting" msprop:Generator_RowChangingName="RacunRowChanging" msprop:Generator_RowEvHandlerName="RacunRowChangeEventHandler" msprop:Generator_RowDeletedName="RacunRowDeleted" msprop:Generator_RowClassName="RacunRow" msprop:Generator_UserTableName="Racun" msprop:Generator_RowEvArgName="RacunRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_racun" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_racun" msprop:Generator_ColumnPropNameInRow="ID_racun" msprop:Generator_ColumnPropNameInTable="ID_racunColumn" msprop:Generator_UserColumnName="ID_racun" type="xs:int" />
+              <xs:element name="ID_kosarica" msprop:Generator_ColumnVarNameInTable="columnID_kosarica" msprop:Generator_ColumnPropNameInRow="ID_kosarica" msprop:Generator_ColumnPropNameInTable="ID_kosaricaColumn" msprop:Generator_UserColumnName="ID_kosarica" type="xs:int" />
+              <xs:element name="Vrijeme" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnVrijeme" msprop:Generator_ColumnPropNameInRow="Vrijeme" msprop:Generator_ColumnPropNameInTable="VrijemeColumn" msprop:Generator_UserColumnName="Vrijeme" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Stavke_kosarica" msprop:Generator_TableClassName="Stavke_kosaricaDataTable" msprop:Generator_TableVarName="tableStavke_kosarica" msprop:Generator_RowChangedName="Stavke_kosaricaRowChanged" msprop:Generator_TablePropName="Stavke_kosarica" msprop:Generator_RowDeletingName="Stavke_kosaricaRowDeleting" msprop:Generator_RowChangingName="Stavke_kosaricaRowChanging" msprop:Generator_RowEvHandlerName="Stavke_kosaricaRowChangeEventHandler" msprop:Generator_RowDeletedName="Stavke_kosaricaRowDeleted" msprop:Generator_RowClassName="Stavke_kosaricaRow" msprop:Generator_UserTableName="Stavke_kosarica" msprop:Generator_RowEvArgName="Stavke_kosaricaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_pivo" msprop:Generator_ColumnVarNameInTable="columnID_pivo" msprop:Generator_ColumnPropNameInRow="ID_pivo" msprop:Generator_ColumnPropNameInTable="ID_pivoColumn" msprop:Generator_UserColumnName="ID_pivo" type="xs:int" />
+              <xs:element name="ID_kosarica" msprop:Generator_ColumnVarNameInTable="columnID_kosarica" msprop:Generator_ColumnPropNameInRow="ID_kosarica" msprop:Generator_ColumnPropNameInTable="ID_kosaricaColumn" msprop:Generator_UserColumnName="ID_kosarica" type="xs:int" />
+              <xs:element name="Kolicina" msprop:Generator_ColumnVarNameInTable="columnKolicina" msprop:Generator_ColumnPropNameInRow="Kolicina" msprop:Generator_ColumnPropNameInTable="KolicinaColumn" msprop:Generator_UserColumnName="Kolicina" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Stavke_racun" msprop:Generator_TableClassName="Stavke_racunDataTable" msprop:Generator_TableVarName="tableStavke_racun" msprop:Generator_RowChangedName="Stavke_racunRowChanged" msprop:Generator_TablePropName="Stavke_racun" msprop:Generator_RowDeletingName="Stavke_racunRowDeleting" msprop:Generator_RowChangingName="Stavke_racunRowChanging" msprop:Generator_RowEvHandlerName="Stavke_racunRowChangeEventHandler" msprop:Generator_RowDeletedName="Stavke_racunRowDeleted" msprop:Generator_RowClassName="Stavke_racunRow" msprop:Generator_UserTableName="Stavke_racun" msprop:Generator_RowEvArgName="Stavke_racunRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_pivo" msprop:Generator_ColumnVarNameInTable="columnID_pivo" msprop:Generator_ColumnPropNameInRow="ID_pivo" msprop:Generator_ColumnPropNameInTable="ID_pivoColumn" msprop:Generator_UserColumnName="ID_pivo" type="xs:int" />
+              <xs:element name="ID_racun" msprop:Generator_ColumnVarNameInTable="columnID_racun" msprop:Generator_ColumnPropNameInRow="ID_racun" msprop:Generator_ColumnPropNameInTable="ID_racunColumn" msprop:Generator_UserColumnName="ID_racun" type="xs:int" />
+              <xs:element name="Kolicina" msprop:Generator_ColumnVarNameInTable="columnKolicina" msprop:Generator_ColumnPropNameInRow="Kolicina" msprop:Generator_ColumnPropNameInTable="KolicinaColumn" msprop:Generator_UserColumnName="Kolicina" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_test" msprop:Generator_TableClassName="Table_testDataTable" msprop:Generator_TableVarName="tableTable_test" msprop:Generator_RowChangedName="Table_testRowChanged" msprop:Generator_TablePropName="Table_test" msprop:Generator_RowDeletingName="Table_testRowDeleting" msprop:Generator_RowChangingName="Table_testRowChanging" msprop:Generator_RowEvHandlerName="Table_testRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_testRowDeleted" msprop:Generator_RowClassName="Table_testRow" msprop:Generator_UserTableName="Table_test" msprop:Generator_RowEvArgName="Table_testRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Image" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInRow="Image" msprop:Generator_ColumnPropNameInTable="ImageColumn" msprop:Generator_UserColumnName="Image" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MAX_x0020_ID_Racun" msprop:Generator_TableClassName="MAX_ID_RacunDataTable" msprop:Generator_TableVarName="tableMAX_ID_Racun" msprop:Generator_TablePropName="MAX_ID_Racun" msprop:Generator_RowDeletingName="MAX_ID_RacunRowDeleting" msprop:Generator_RowChangingName="MAX_ID_RacunRowChanging" msprop:Generator_RowEvHandlerName="MAX_ID_RacunRowChangeEventHandler" msprop:Generator_RowDeletedName="MAX_ID_RacunRowDeleted" msprop:Generator_UserTableName="MAX ID_Racun" msprop:Generator_RowChangedName="MAX_ID_RacunRowChanged" msprop:Generator_RowEvArgName="MAX_ID_RacunRowChangeEvent" msprop:Generator_RowClassName="MAX_ID_RacunRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Pregled_racuna" msprop:Generator_TableClassName="Pregled_racunaDataTable" msprop:Generator_TableVarName="tablePregled_racuna" msprop:Generator_TablePropName="Pregled_racuna" msprop:Generator_RowDeletingName="Pregled_racunaRowDeleting" msprop:Generator_RowChangingName="Pregled_racunaRowChanging" msprop:Generator_RowEvHandlerName="Pregled_racunaRowChangeEventHandler" msprop:Generator_RowDeletedName="Pregled_racunaRowDeleted" msprop:Generator_UserTableName="Pregled_racuna" msprop:Generator_RowChangedName="Pregled_racunaRowChanged" msprop:Generator_RowEvArgName="Pregled_racunaRowChangeEvent" msprop:Generator_RowClassName="Pregled_racunaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_pivo" msprop:Generator_ColumnVarNameInTable="columnID_pivo" msprop:Generator_ColumnPropNameInRow="ID_pivo" msprop:Generator_ColumnPropNameInTable="ID_pivoColumn" msprop:Generator_UserColumnName="ID_pivo" type="xs:int" />
+              <xs:element name="Kolicina" msprop:Generator_ColumnVarNameInTable="columnKolicina" msprop:Generator_ColumnPropNameInRow="Kolicina" msprop:Generator_ColumnPropNameInTable="KolicinaColumn" msprop:Generator_UserColumnName="Kolicina" type="xs:int" />
+              <xs:element name="Ime_piva" msprop:Generator_ColumnVarNameInTable="columnIme_piva" msprop:Generator_ColumnPropNameInRow="Ime_piva" msprop:Generator_ColumnPropNameInTable="Ime_pivaColumn" msprop:Generator_UserColumnName="Ime_piva" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cijena" msprop:Generator_ColumnVarNameInTable="columnCijena" msprop:Generator_ColumnPropNameInRow="Cijena" msprop:Generator_ColumnPropNameInTable="CijenaColumn" msprop:Generator_UserColumnName="Cijena" type="xs:double" minOccurs="0" />
+              <xs:element name="Vrijeme" msprop:Generator_ColumnVarNameInTable="columnVrijeme" msprop:Generator_ColumnPropNameInRow="Vrijeme" msprop:Generator_ColumnPropNameInTable="VrijemeColumn" msprop:Generator_UserColumnName="Vrijeme" type="xs:dateTime" />
+              <xs:element name="ID_racun" msprop:Generator_ColumnVarNameInTable="columnID_racun" msprop:Generator_ColumnPropNameInRow="ID_racun" msprop:Generator_ColumnPropNameInTable="ID_racunColumn" msprop:Generator_UserColumnName="ID_racun" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Otvorene_x0020_narudžbe" />
+      <xs:field xpath="mstns:ID_kosarica" />
+    </xs:unique>
+    <xs:unique name="Izdane_x0020_narudžbe_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Izdane_x0020_narudžbe" />
+      <xs:field xpath="mstns:ID_kosarica" />
+    </xs:unique>
+    <xs:unique name="Kosarica_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Kosarica" />
+      <xs:field xpath="mstns:ID_kosarica" />
+    </xs:unique>
+    <xs:unique name="Pivo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Pivo" />
+      <xs:field xpath="mstns:ID_pivo" />
+    </xs:unique>
+    <xs:unique name="Racun_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Racun" />
+      <xs:field xpath="mstns:ID_racun" />
+    </xs:unique>
+    <xs:unique name="Table_test_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Table_test" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="Pregled_racuna_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Pregled_racuna" />
+      <xs:field xpath="mstns:ID_racun" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Racun_Kosarica" msdata:parent="Kosarica" msdata:child="Racun" msdata:parentkey="ID_kosarica" msdata:childkey="ID_kosarica" msprop:Generator_UserChildTable="Racun" msprop:Generator_ChildPropName="GetRacunRows" msprop:Generator_UserRelationName="FK_Racun_Kosarica" msprop:Generator_RelationVarName="relationFK_Racun_Kosarica" msprop:Generator_UserParentTable="Kosarica" msprop:Generator_ParentPropName="KosaricaRow" />
+      <msdata:Relationship name="FK_Stavke_kosarica_Kosarica" msdata:parent="Kosarica" msdata:child="Stavke_kosarica" msdata:parentkey="ID_kosarica" msdata:childkey="ID_kosarica" msprop:Generator_UserChildTable="Stavke_kosarica" msprop:Generator_ChildPropName="GetStavke_kosaricaRows" msprop:Generator_UserRelationName="FK_Stavke_kosarica_Kosarica" msprop:Generator_RelationVarName="relationFK_Stavke_kosarica_Kosarica" msprop:Generator_UserParentTable="Kosarica" msprop:Generator_ParentPropName="KosaricaRow" />
+      <msdata:Relationship name="FK_Stavke_kosarica_Pivo" msdata:parent="Pivo" msdata:child="Stavke_kosarica" msdata:parentkey="ID_pivo" msdata:childkey="ID_pivo" msprop:Generator_UserChildTable="Stavke_kosarica" msprop:Generator_ChildPropName="GetStavke_kosaricaRows" msprop:Generator_UserRelationName="FK_Stavke_kosarica_Pivo" msprop:Generator_RelationVarName="relationFK_Stavke_kosarica_Pivo" msprop:Generator_UserParentTable="Pivo" msprop:Generator_ParentPropName="PivoRow" />
+      <msdata:Relationship name="FK_Stavke_racun_Pivo" msdata:parent="Pivo" msdata:child="Stavke_racun" msdata:parentkey="ID_pivo" msdata:childkey="ID_pivo" msprop:Generator_UserChildTable="Stavke_racun" msprop:Generator_ChildPropName="GetStavke_racunRows" msprop:Generator_UserRelationName="FK_Stavke_racun_Pivo" msprop:Generator_RelationVarName="relationFK_Stavke_racun_Pivo" msprop:Generator_UserParentTable="Pivo" msprop:Generator_ParentPropName="PivoRow" />
+      <msdata:Relationship name="FK_Stavke_racun_Racun" msdata:parent="Racun" msdata:child="Stavke_racun" msdata:parentkey="ID_racun" msdata:childkey="ID_racun" msprop:Generator_UserChildTable="Stavke_racun" msprop:Generator_ChildPropName="GetStavke_racunRows" msprop:Generator_UserRelationName="FK_Stavke_racun_Racun" msprop:Generator_RelationVarName="relationFK_Stavke_racun_Racun" msprop:Generator_UserParentTable="Racun" msprop:Generator_ParentPropName="RacunRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

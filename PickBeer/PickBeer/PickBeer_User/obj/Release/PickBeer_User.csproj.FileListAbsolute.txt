@@ -1,0 +1,13 @@
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\bin\Release\PickBeer_User.exe.config
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\bin\Release\GrimmBee - PickBeer - Gost.exe.config
+C:\Users\Gabriel\Desktop\GOST\GrimmBee - PickBeer - Gost.exe.config
+C:\Users\Gabriel\Desktop\GOST\GrimmBee - PickBeer - Gost.exe
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Release\PickBeer_User.Glavni_izbornik.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Release\PickBeer_User.FormCjenik.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Release\PickBeer_User.FormHelp.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Release\PickBeer_User.FormKosarica.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Release\PickBeer_User.FormRulet.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Release\PickBeer_User.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Release\PickBeer_User.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Release\GrimmBee - PickBeer - Gost.exe
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer\PickBeer_User\obj\Release\GrimmBee - PickBeer - Gost.exe

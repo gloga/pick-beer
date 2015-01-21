@@ -1,0 +1,14 @@
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\bin\Release\GrimmBee - RateBeer - ADMIN.exe.config
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\bin\Release\GrimmBee - RateBeer - ADMIN.exe
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Release\GrimmBee - PickBeer_Admin.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Release\GrimmBee___RateBeer.FormAdd.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Release\GrimmBee___RateBeer.FormMain.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Release\GrimmBee___RateBeer.FormNedostaje.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Release\GrimmBee___RateBeer.FormStanje.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Release\GrimmBee___RateBeer.FormUpdate.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Release\GrimmBee___RateBeer.FormView.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Release\GrimmBee___RateBeer.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Release\GrimmBee - PickBeer_Admin.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\GrimmBee - RateBeer\obj\Release\GrimmBee - RateBeer - ADMIN.exe
+C:\Users\Gabriel\Desktop\ADMIN\GrimmBee - RateBeer - ADMIN.exe.config
+C:\Users\Gabriel\Desktop\ADMIN\GrimmBee - RateBeer - ADMIN.exe

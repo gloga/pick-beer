@@ -1,0 +1,115 @@
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe.config
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Glavni_izbornik.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Properties.Resources.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\bin\Debug\PickBeer_User.pdb
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.exe
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.pdb
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormCjenik.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormKosarica.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe.config
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csprojResolveAssemblyReference.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Glavni_izbornik.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormCjenik.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormKosarica.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Properties.Resources.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csproj.GenerateResource.Cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\bin\Debug\PickBeer_User.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormStol.resources
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\bin\Debug\PickBeer_User.exe.config
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\obj\Debug\PickBeer_User.exe
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\obj\Debug\PickBeer_User.pdb
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\bin\Debug\PickBeer_User.exe
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\bin\Debug\PickBeer_User.pdb
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\obj\Debug\PickBeer_User.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\obj\Debug\PickBeer_User.Glavni_izbornik.resources
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\obj\Debug\PickBeer_User.FormCjenik.resources
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\obj\Debug\PickBeer_User.FormKosarica.resources
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\obj\Debug\PickBeer_User.FormStol.resources
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\obj\Debug\PickBeer_User.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\GrimmBee - RateBeer\PickBeer_User\obj\Debug\PickBeer_User.csproj.GenerateResource.Cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer_User\bin\Debug\PickBeer_User.exe.config
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer_User\obj\Debug\PickBeer_User.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer_User\obj\Debug\PickBeer_User.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer_User\bin\Debug\PickBeer_User.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer_User\bin\Debug\PickBeer_User.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer_User\obj\Debug\PickBeer_User.csprojResolveAssemblyReference.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer_User\obj\Debug\PickBeer_User.Glavni_izbornik.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer_User\obj\Debug\PickBeer_User.FormCjenik.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer_User\obj\Debug\PickBeer_User.FormKosarica.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer_User\obj\Debug\PickBeer_User.Properties.Resources.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer_User\obj\Debug\PickBeer_User.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\novo\novo\PickBeer_User\bin\Debug\PickBeer_User.exe.config
+C:\Users\Gabriel\Desktop\novo\novo\PickBeer_User\obj\Debug\PickBeer_User.exe
+C:\Users\Gabriel\Desktop\novo\novo\PickBeer_User\obj\Debug\PickBeer_User.pdb
+C:\Users\Gabriel\Desktop\novo\novo\PickBeer_User\bin\Debug\PickBeer_User.exe
+C:\Users\Gabriel\Desktop\novo\novo\PickBeer_User\bin\Debug\PickBeer_User.pdb
+C:\Users\Gabriel\Desktop\novo\novo\PickBeer_User\obj\Debug\PickBeer_User.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\novo\novo\PickBeer_User\obj\Debug\PickBeer_User.Glavni_izbornik.resources
+C:\Users\Gabriel\Desktop\novo\novo\PickBeer_User\obj\Debug\PickBeer_User.FormCjenik.resources
+C:\Users\Gabriel\Desktop\novo\novo\PickBeer_User\obj\Debug\PickBeer_User.FormKosarica.resources
+C:\Users\Gabriel\Desktop\novo\novo\PickBeer_User\obj\Debug\PickBeer_User.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\novo\novo\PickBeer_User\obj\Debug\PickBeer_User.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\PickBeer\novo\PickBeer_User\bin\Debug\PickBeer_User.exe.config
+C:\Users\Gabriel\Desktop\PickBeer\novo\PickBeer_User\obj\Debug\PickBeer_User.exe
+C:\Users\Gabriel\Desktop\PickBeer\novo\PickBeer_User\obj\Debug\PickBeer_User.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe.config
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\novo\PickBeer\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe.config
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csprojResolveAssemblyReference.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Glavni_izbornik.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormCjenik.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormKosarica.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Properties.Resources.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csproj.GenerateResource.Cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormRulet.resources
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe.config
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.exe
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.pdb
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.pdb
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Glavni_izbornik.resources
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormCjenik.resources
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormHelp.resources
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormKosarica.resources
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormRulet.resources
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csproj.GenerateResource.Cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe.config
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.pdb
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csprojResolveAssemblyReference.cache
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Glavni_izbornik.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormCjenik.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormHelp.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormKosarica.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormRulet.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Properties.Resources.resources
+C:\Users\ivanpokec\Desktop\pi\projekt lokalno\zadnja\PickBeer4\PickBeer4\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe.config
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.exe
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.pdb
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.exe
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\bin\Debug\PickBeer_User.pdb
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Glavni_izbornik.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormCjenik.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormHelp.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormKosarica.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormRulet.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_User\obj\Debug\PickBeer_User.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\PickBeer\PickBeer\PickBeer_User\bin\Debug\GrimmBee - PickBeer - Gost.exe.config

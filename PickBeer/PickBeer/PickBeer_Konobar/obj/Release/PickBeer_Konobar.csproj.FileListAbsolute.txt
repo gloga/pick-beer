@@ -1,0 +1,14 @@
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\bin\Release\GrimmBee - PickBeer - Konobar.exe.config
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\bin\Release\GrimmBee - PickBeer - Konobar.exe
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Release\PickBeer_Konobar.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Release\PickBeer_Konobar.FormDetalji_kosarice.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Release\PickBeer_Konobar.FormIzdane_narudbe.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Release\PickBeer_Konobar.FormOtvorene_kosarice.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Release\PickBeer_Konobar.FormRacun.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Release\PickBeer_Konobar.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Release\PickBeer_Konobar.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Release\RdlCompile.cache
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Release\RdlCompile.compiled
+C:\Users\Gabriel\Desktop\PickBeer5\PickBeer\PickBeer_Konobar\obj\Release\GrimmBee - PickBeer - Konobar.exe
+C:\Users\Gabriel\Desktop\KONOBAR\GrimmBee - PickBeer - Konobar.exe.config
+C:\Users\Gabriel\Desktop\KONOBAR\GrimmBee - PickBeer - Konobar.exe
